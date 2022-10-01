@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "whisper-playground"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "whisper_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+whisper = {git = "https://github.com/openai/whisper.git"}
+torch = "^1.12.1"
+torchvision = "^0.13.1"
+torchaudio = "^0.12.1"
+tqdm = "^4.64.1"
+transformers = "^4.22.2"
+ffmpeg-python = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
